@@ -9,11 +9,9 @@
 		<title>Diogo Damiani</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-16439959-1"></script>
 		<script>
@@ -24,7 +22,7 @@
 			gtag('config', 'UA-16439959-1');
 		</script>
 	</head>
-	<body class="loading">
+	<body class="is-preload">
 		<div id="wrapper">
 			<div id="bg"></div>
 			<div id="overlay"></div>
@@ -36,11 +34,11 @@
 						<p>Software Engineer&nbsp;&bull;&nbsp; Be my guest</p>
 						<nav>
 							<ul>
-								<li><a href="https://twitter.com/diogodamiani" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.facebook.com/diogodamiani" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.linkedin.com/in/diogodamiani" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/diogodamiani/" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="mailto:diogodamiani@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+								<li><a href="https://twitter.com/diogodamiani" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/diogodamiani" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.linkedin.com/in/diogodamiani" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/diogodamiani/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="mailto:diogodamiani@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
 						</nav>
 					</header>
@@ -52,9 +50,8 @@
 
 			</div>
 		</div>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script>
-			window.onload = function() { document.body.className = ''; }
+			window.onload = function() { document.body.classList.remove('is-preload'); }
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
 		</script>
